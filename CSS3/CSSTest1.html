@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Welcome travellers!
+        In this experience with CSS, I show up some ways of how can we use CSS inside a HTML project.-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Tests</title>
+    <!--The method where we put a CSS resource as atag style into a HTML tab is called "Internal CSS".-->
+    <style>
+        h1{
+            margin-left:50px;
+
+            text-shadow: -2.5px 2.5px 5px #333;
+            -webkit-text-shadow: -2.5px 2.5px 5px #333;
+            -moz-text-shadow: -2.5px 2.5px 5px #333;
+        }
+        #Image1{
+            border-radius: 20px;
+
+            box-shadow: -5px 5px 1px #333;
+            -webkit-box-shadow: -5px 5px 1px #333;
+            -moz-box-shadow: -5px 5px 1px #333;  
+        }
+        #caixaComSombra1{
+            background-color: #ddd;
+            width: 300px;
+            padding: 10px;
+            margin-left: 500px;
+            margin-top: 10px;
+
+            box-shadow: -10px 5px 1px #333;
+            -webkit-box-shadow: -10px 5px 1px #333;
+            -moz-box-shadow: -10px 5px 1px #333;
+        }
+        #caixaComSombraArredondada1{
+            background-color: rgb(14,189,145);
+            width: 300px;
+            padding: 10px;
+            margin-left: 300px;
+            margin-top: 10px;
+            border-radius: 7px;
+            -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+
+
+            box-shadow: -15px 15px 1px #333;
+            -webkit-box-shadow: -15px 15px 1px #333;
+            -moz-box-shadow: -15px 15px 1px #333;
+        }
+        #text1{
+            width: 300px;
+            font-size: 25px;
+            margin-left: 100px;
+            border: 1px solid #000;
+            word-wrap: break-word;
+        }
+        #text2{
+            width: 300px;
+            font-size: 25px;
+            margin-left: 300px;
+            border: 1px solid #000;
+            word-wrap: break-word;
+            background-color: silver;
+        }
+        #text3{
+            width: 300px;
+            font-size: 25px;
+            margin-left: 550px;
+            border: 1px solid #000;
+            word-wrap: break-word;
+            background-color: gold;
+            transform: rotate(-30deg);
+        }
+        #Vortex{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            -webkit-transform: width 2s, height 2s, -webkit-transition 2s;
+        }
+        #Votex:hover {
+            width: 200px;
+            height: 200px;
+            -webkit-transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body style="padding-bottom: 300px;">
+    <h1>Using CSS: Test 1</h1>
+    <!--The method where we put a CSS resource into a HTML tag is called "CSS Inline".-->
+    <img id="Image1" src="osAventureiros.png" style = "border-radius: 20px; margin-left: 700px;" alt="foto dos aventureiros" height="514" width="859">
+    <table>
+        <tr>
+            <td>
+            <div id="caixaComSombra1"> 
+                    <p>This is a layer with a shadow, created with CSS3</p> 
+            </div>
+            <!--</td>-->
+            <!--<td>-->
+            <div id="caixaComSombraArredondada1"> 
+                    <p>This is a rounded layer with a rounded shadow, created with CSS3. The shadow adapts itself with the layer</p>
+            </div> 
+            </td>
+        </tr>
+    </table>
+    <p id="text1">Hey, I'm a box! If you wanna know how my text is perfectly fitted in this box, read my CSS code!</p>
+    <p id="text2">Hey, I'm a box too! But a silver e more beuatiful version!</p>
+    <p id="text3">Hey, I'm the third box! If you want to know my secret, take a look at... AHHHHHH!</p>
+    <img id="Vortex" src="portalVortex.png" alt="portal vortex" style = "margin-left: 700px;" alt="vortex" height="100" width="100">
+</body>
+</html>
